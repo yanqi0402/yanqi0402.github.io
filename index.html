@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <title>常见问题FAQ解答</title>
+        <meta name="keywords" content="常见问题,FAQ,解答" />
+        <meta name="description" content="常见问题FAQ解答HTML5网页，带Tab选项卡切换功能。" /> 
+        <meta name="author" content="yanqi" />
+        <meta name="copyright" content="yanqi" />
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/tab.js"></script>
+        <script type="text/javascript" src="js/fold.js"></script>
 
-<head>
-<meta charset="UTF-8">
-<title>FAQ</title>
-</head>
+    </head>
+    <body>
 
-<body>
-FAQ
-</body>
+        <section class="aui-flexView">
+            <header class="aui-navBar aui-navBar-fixed">
+                <a href="javascript:;" class="aui-navBar-item">
+                    <i class="icon icon-return"></i>
+                </a>
+                <div class="aui-center">
+                    <span class="aui-center-title">常见问题FAQ解答</span>
+                </div>
+                <a href="javascript:;" class="aui-navBar-item">
+                    <i class="icon icon-sys"></i>
+                </a>
+            </header>
+            <section class="aui-scrollView">
+                <div class="aui-tab" data-ydui-tab>
+                    <ul class="tab-nav">
+                        <li class="tab-nav-item tab-active">
+                            <a href="javascript:;">
+                                域用户问题
+                            </a>
+                        </li>
+                        <li class="tab-nav-item ">
+                            <a href="javascript:;">
+                               桌面问题
+                            </a>
+                        </li>
+                        <li class="tab-nav-item ">
+                            <a href="javascript:;">
+                                员工Notes
+                            </a>
+                        </li>
+                        <li class="tab-nav-item ">
+                            <a href="javascript:;">
+                                员工Sametime
+                            </a>
+                        </li>
+                        <li class="tab-nav-item ">
+                            <a href="javascript:;">
+                                外援用户
+                            </a>
+                        </li>
+                        <li class="tab-nav-item ">
+                            <a href="javascript:;">
+                                视频会议
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-panel">
+                        <div class="tab-panel-item tab-active">
+                            <div class="tab-item">
+                                <ul class="accordion">
+                                    <li class="aui-menu-item b-line">
+                                        <div class="link">
+                                            <i class="icon aui-icon-q"></i>
+                                            如何自助重置DMS域用户密码？
+                                            <i class="icon icon-dow"></i>
+                                        </div>
+                                        <div class="submenu">
+                                            <i class="icon icon-a"></i>
+                                            <p>通过任何一台加入DMS域的计算机用浏览器访问http://pwd.dms.bocoa.com网页，左侧选择“重置密码”，根据提示填入正确信息后可对用户进行自助重置。</p>
+                                            <p>重置后的密码为初始密码，需要在计算机进行更改密码操作后才能生效，或者可以在http://pwd.dms.bocoa.com网页左侧选择“更改密码”，对初始密码进行更改并生效。</p>
+                                        </div>
+                                    </li>
+                                    <li class="aui-menu-item b-line">
+                                        <div class="link">
+                                            <i class="icon aui-icon-q"></i>
+                                            如何自助解锁DMS域用户密码？
+                                            <i class="icon icon-dow"></i>
+                                        </div>
+                                        <div class="submenu">
+                                            <p>通过任何一台加入DMS域的计算机用浏览器访问http://pwd.dms.bocoa.com，页面左侧选择“解锁用户”，根据提示填入正确信息后可对用户进行自助解锁。</p>
+                                            <p>一般当域用户锁定后会在30分钟后自动解锁。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-panel-item">
+                            <div class="tab-item">
+                                <ul  class="accordion">
+                                    <li class="aui-menu-item b-line">
+                                        <div class="link">
+                                            <i class="icon aui-icon-q"></i>
+                                            登陆时报"此工作站和主域间信任关系失败"或"服务器上的安全数据库没有此工作站信任关系的计算机账户"怎么解决？
+                                            <i class="icon icon-dow"></i>
+                                        </div>
+                                        <div class="submenu">
+                                            <i class="icon icon-a"></i>
+                                            <p>1、把报错计算机的网线拔出，再用域用户登录，登陆后再插入网线，链接iNode客户端。</p>
+                                            <p>2、找到“计算机”或“此电脑”右键点击，选择“管理”，然后依次选择“本地用户和组”-“用户”-右键点击“administrator”，选择设置密码（密码策略为大写字母、小写字母、数字、特殊字任选三，长度在8位以上），确定保存。</p>
+                                            <p>3、双击“administrator”-取消勾选“账户已禁用”-确定保存。</p>
+                                            <p>4、退域：找到“计算机”或“此电脑”右键点击，选择“属性”- 点击“更改设置”- 选择“计算机名”选项卡 -“更改”- 将“隶属于”改为工作组（名字随便写）- 确认包村，重启后使用本地管理员登录桌面</p>
+                                            <p>5、加域：由于方法中含有密码信息，请内网登陆“ftp://22.11.129.14”获取“中行软件中心办公用机_安装与配置指南.docx”进行加域操作，FTP用户密码咨询本部门安全员。</p>
+                                            <p>6、加域后切换到域用户登录：登陆界面选择其他用户，输入本人域用户名和密码登录。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-panel-item">
+                            <div class="tab-item">
+                                <ul  class="accordion">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-panel-item">
+                            <div class="tab-item">
+                                <ul  class="accordion">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-panel-item">
+                            <div class="tab-item">
+                                <ul  class="accordion">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-panel-item">
+                            <div class="tab-item">
+                                <ul  class="accordion">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+    </body>
 </html>
