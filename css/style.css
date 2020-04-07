@@ -500,7 +500,7 @@ a {
             display:table-cell;
             padding:0 5px;
             border:1px solid #ccc;
-            font-size:12px;
+            font-size:10px;
         }
         .table-row-group .table-row:hover,
         .table-footer-group .table-row:hover{
